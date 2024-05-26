@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://4.bp.blogspot.com/-6kVaNQj_1OQ/V3WEfTmo0JI/AAAAAAAAAzs/mlysQLhgyBEyWXuuVlFwFwn3_CCmsIXcgCLcB/s320/logo-fis-uncp-1%2B%255BJoel%2BTinx%255D.png">   
+    <link rel="stylesheet" href="style.css">
+<body>
+
+        <div class="datos-clase">
+            <div class="tittle-general">
+                <h1> EJERCICIOS DEL LABORATORIO SEMANA N°4y5</h1>
+            </div>
+            <div class="alumn">
+                <li>ALUMNA : HUAMAN CUNYAS LIANN MELANNY </li>
+            </div>
+        </div>
+        <div class="tittle-container">
+            <h3 class="tittle">Ejercicio 5.1 : Diseñar una pagina web para manipular el DOM con un botón.</h3>
+        </div>
+
+        <section class="button-container">
+            <div>ESTOY :
+                <h3 id="text-change">
+                    FELIZ
+                </h3>
+            </div>
+            <button type="button" class="btn-shading" id="btn-change">
+                    Change
+            </button>
+        </section>
+
+        <div class="tittle-container">
+            <h3 class="tittle">Ejercicio 5.2 :Desarrollar una aplicación para manipular el DOM con addEventListener, mostrando la reactividad de Javascript mediante un input text y un parrafo.</h3>
+        </div>
+
+        <section class="manipulaDom">
+            <input type="text" id="textInput">
+            <div id="output">Miras el cambio</div>
+        </section>
+
+        <div class="tittle-container">
+            <h3 class="tittle">Ejercicio 5.3 : Desarrollar una aplicación para obtener y manipular datos del DOM, mostrando un formulario con 2 input text para el ingreso de numeros y mostrar el resultado de la suma.</h3>
+        </div>
+
+        <section class="suma">
+            <form id="sumForm">
+                <label for="num1">Número 1:</label>
+                <input type="text" id="num1" name="num1" placeholder="Ingrese el primer número">
+                <label for="num2">Número 2:</label>
+                <input type="text" id="num2" name="num2" placeholder="Ingrese el segundo número">
+                <button type="submit">Sumar</button>
+            </form>
+            <div id="result"></div>
+        </section>
+
+
+        <div class="tittle-container">
+            <h3 class="tittle">Ejercicio 5.4 : Desarrollar una aplicación que muestre una tabla con 10 datos de estudiantes id, apellidos, nombres, direccion y telefono. Crear un array con 10 objetos y manipular los datos del DOM para mostrar los datos del array.</h3>
+        </div>
+
+        <section class="estudiantes">
+            <h2>Tabla de Estudiantes</h2>
+            <table id="studentTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Apellidos</th>
+                        <th>Nombres</th>
+                        <th>Dirección</th>
+                        <th>Teléfono</th>
+                    </tr>
+                </thead>
+                <tbody id="studentData">
+                    <!-- Datos de los estudiantes se generarán dinámicamente aquí -->
+                </tbody>
+            </table>
+        </div>
+        </section>
+
+        <div class="tittle-container">
+            <h3 class="tittle">Ejercicio 5.5 : Desarrollar una aplicación orientado a objetos que muestre una tabla con 10 datos de estudiantes id, apellidos, nombres, direccion y telefono. Crear un array con 10 objetos y manipular los datos del DOM para mostrar los datos del array.</h3>
+        </div>
+
+        <section class="estudiantes">
+            <h1>Lista de Estudiantes</h1>
+            <table id="studentsTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Apellidos</th>
+                        <th>Nombres</th>
+                        <th>Dirección</th>
+                        <th>Teléfono</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </section>
+        <script src="app.js"></script>
+</body>
+</html>

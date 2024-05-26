@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- ICONOS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <title>Portafolio | Liann</title>
+</head>
+<body>
+    <div class="container">
+        <!-- --------------- HEADER --------------- -->
+        <nav id="header">
+            <div class="nav-logo">
+                <p class="nav-name">Liann</p>
+                <span>.</span>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="#inicio" class="nav-link active-link">Inicio</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#sobreMi" class="nav-link">Sobre mi</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#proyectos" class="nav-link">Proyectos</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#contacto" class="nav-link">Contácteme</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button class="btn" onclick="descargarCV()">Desacargar CV <i class="uil uil-file-alt"></i></button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+        <!-- -------------- MAIN ---------------- -->
+        <main class="wrapper">
+            <!-- -------------- FEATURED BOX ---------------- -->
+            <section class="featured-box" id="inicio">
+                <div class="featured-text">
+                    <div class="featured-text-card">
+                        <span>Hola, Yo soy</span>
+                    </div>
+                    <div class="featured-name">
+                        <p><span class="nameText"> Liann Melanny </span> <br> Desarrolladora <br><span class="typedText"></span></p>
+                    </div>
+                    <div class="featured-text-info">
+                        <p>Soy estudiante de Ingeniería de Sistemas en la UNCP apasionada por aprender nuevas habilidades.
+                        Soy curiosa, aprendo rápido y creo software para mejorar el mundo, siempre buscando hacer una diferencia con mi trabajo.
+                        </p>
+                    </div>
+                    <div class="featured-text-btn">
+                        <button class="btn blue-btn">Contácteme</button>
+                        <button class="btn" onclick="descargarCV()" >Desacargar CV <i class="uil uil-file-alt"></i>
+                            <a href=""></a>
+                        </button>
+                    </div>
+                    <div class="social_icons">
+                        <div class="icon" onclick="redireccionarInstagram() "><i class="uil uil-instagram"></i></div>
+                        <div class="icon" onclick="redireccionarLinkedIn()"><i class="uil uil-linkedin-alt"></i></div>
+                        <div class="icon" onclick="redireccionarDribbble()"><i class="uil uil-dribbble"></i></div>
+                        <div class="icon" onclick="redireccionarGitHub()"><i class="uil uil-github-alt"></i></div>
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <div class="image">
+                        <img src="assets/images/avatar.jpg" alt="avatar">
+                    </div>
+                </div>
+                <div class="scroll-icon-box">
+                    <a href="#sobreMi" class="scroll-btn">
+                        <i class="uil uil-mouse-alt"></i>
+                        <p>Scroll Down</p>
+                    </a>
+                </div>
+            </section>
+            <!-- -------------- sobreMi BOX ---------------- -->
+            <section class="section" id="sobreMi">
+                <div class="top-header">
+                    <h1>Acerca de mi</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="sobreMi-info">
+                            <p class="aboutMe">Soy una apasionada desarrolladora web en constante búsqueda de nuevas habilidades
+                                para crear software que haga del mundo un lugar mejor. Con una mente curiosa y
+                                una habilidad para aprender rápidamente, el desafío no me intimida.
+                                Mi objetivo es simple pero poderoso: marcar la diferencia a través de la tecnología.
+
+                                Mi experiencia en la aplicación de diversas tecnologías en diferentes
+                                proyectos me ha convertido en alguien que sabe manejar la presión y
+                                las situaciones estresantes con facilidad. Además, he aprendido a trabajar
+                                eficazmente y a comunicarme de manera positiva y efectiva en equipos diversos,
+                                aprovechando las habilidades únicas de cada individuo.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Frontend</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>HTML5 </span>
+                                <span>CSS3</span>
+                                <span>Bootstrap</span>
+                                <span>Tailwind CSS</span>
+                                <span>JavaScript</span>
+                                <span>Vue.js</span>
+                                <span>React.js</span>
+                                <span>Figma</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Backend</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>PHP 8</span>
+                                <span>Laravel</span>
+                                <span>Docker</span>
+                                <span>JWT</span>
+                                <span>Linux</span>
+                                <span>GIT</span>
+                            </div>
+                        </div>
+                        <div class="skills-box">
+                            <div class="skills-header">
+                                <h3>Database</h3>
+                            </div>
+                            <div class="skills-list">
+                                <span>MySQL</span>
+                                <span>PostgreSQL</span>
+                                <span>SQLServer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- -------------- PROJECT BOX ---------------- -->
+            <section class="section" id="proyectos">
+                <div class="top-header">
+                    <h1>Proyectos Academicos</h1>
+                </div>
+                <div class="project-container">
+                    <div class="project-box" onclick="openLinkOne()" >
+                        <i class="uil uil-award"></i>
+                        <h3>Semana N°1</h3>
+                        <label>Plugin Emmet y atajos de teclado de VSC.</label>
+                    </div>
+                    <div class="project-box" onclick="openLinkTwo()" >
+                        <i class="uil uil-briefcase-alt"></i>
+                        <h3>Semana N°2</h3>
+                        <label>Uso de HTML y CSS para diseñar elementos utilizables en la web</label>
+                    </div>
+                    <div class="project-box" onclick="openLinkTwoOne()">
+                        <i class="uil uil-briefcase-alt"></i>
+                        <h3>Semana N°2 | SideBar </h3>
+                        <label> Sidebar con 2 modos de visualización: claro y oscur</label>
+                    </div>
+                    <div class="project-box" onclick="openLinkTreeOne()">
+                        <i class="uil uil-award"></i>
+                        <h3>Semana N°3 | CSS</h3>
+                        <label>Usar y personalizar librerías de código CSS para el diseño responsive</label>
+                    </div>
+                    <div class="project-box" onclick="openLinkTreeTwo()" >
+                        <i class="uil uil-award"></i>
+                        <h3>Semana N°3 | BootStrap</h3>
+                        <label>Usar y personalizar librerías de código CSS para el diseño responsive</label>
+                    </div>
+                    <div class="project-box" onclick="openLinkTreeTree()" >
+                        <i class="uil uil-award"></i>
+                        <h3>Semana N°3 | Tailwind</h3>
+                        <label>Usar y personalizar librerías de código CSS para el diseño responsive</label>
+                    </div>
+                    <div class="project-box" onclick="openLinkTreeFour()">
+                        <i class="uil uil-award"></i>
+                        <h3>Semana N°3 | Page </h3>
+                        <label>Pagina web responsive en HTML CSS</label>
+                    </div>
+                    <div class="project-box" onclick="openLinkTreeFive()" >
+                        <i class="uil uil-award"></i>
+                        <h3>Semana N°3 | Page BootStrap</h3>
+                        <label>Pagina web responsive en HTML BootStrap</label>
+                    </div>
+                    <div class="project-box" onclick="openLinkFour()" >
+                        <i class="uil uil-award"></i>
+                        <h3>Semana N°4 - 5 | JS</h3>
+                        <label>Desarrollar aplicaciones dinámicas con Javascrip.</label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- -------------- contacto BOX ---------------- -->
+            <section class="section" id="contacto">
+                <div class="top-header">
+                    <h1>Ponerse en contacto</h1>
+                    <span>Tienes algún proyecto en mente, contáctame aquí</span>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="contacto-info">
+                            <h2>Encuentrame <i class="uil uil-corner-right-down"></i></h2>
+                            <p><i class="uil uil-envelope"></i> Email: melanycunyas@gmail.com</p>
+                            <p><i class="uil uil-phone"></i> Tel: +51 940 - 925 - 592</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-control">
+                            <div class="form-inputs">
+                                <input type="text" class="input-field" placeholder="Nombre">
+                                <input type="text" class="input-field" placeholder="Email">
+                            </div>
+                            <div class="text-area">
+                                <textarea placeholder="Mensaje"></textarea>
+                            </div>
+                            <div class="form-button">
+                                <button class="btn">Enviar <i class="uil uil-message"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- --------------- FOOTER --------------- -->
+        <footer>
+            <div class="top-footer">
+                <p>Liann Melanny .</p>
+            </div>
+            <div class="middle-footer">
+                <ul class="footer-menu">
+                    <li class="footer_menu_list">
+                        <a href="#inicio">Inicio</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#sobreMi">Sobre mi</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="footer_menu_list">
+                        <a href="#contacto">Contácteme</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social-icons">
+                <div class="icon" onclick="redireccionarInstagram() "><i class="uil uil-instagram"></i></div>
+                <div class="icon" onclick="redireccionarLinkedIn()"><i class="uil uil-linkedin-alt"></i></div>
+                <div class="icon" onclick="redireccionarDribbble()"><i class="uil uil-dribbble"></i></div>
+                <div class="icon" onclick="redireccionarGitHub()"><i class="uil uil-github-alt"></i></div>
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright &copy; <a href="#inicio" style="text-decoration: none;">Liann Melanny</a> - All rights reserved</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+	<!-- ----- MAIN JS ----- -->
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
