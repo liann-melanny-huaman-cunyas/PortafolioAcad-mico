@@ -1,6 +1,3 @@
-Claro, aquí tienes el contenido con la imagen añadida después de los enunciados de los ejercicios:
-
-```markdown
 # Semana 2: HTML y CSS
 
 ## Tema
