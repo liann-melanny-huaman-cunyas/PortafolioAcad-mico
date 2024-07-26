@@ -4,6 +4,15 @@
 
 Este portafolio académico documenta mi progreso y aprendizaje a lo largo del curso de Desarrollo de Aplicaciones Web. A continuación se presenta un resumen de los temas abordados, los objetivos de cada semana y una reflexión sobre los conocimientos adquiridos.
 
+>Intitución                 |Universidad Nacional del Centro del Perú   |
+>-------------------------  | ------------------------------            |
+>**Programa de Estudios:**  | Ingeniería de Sistemas                    |
+>**Asignatura:**            | Desarrollo de Aplicaciones Web            |
+>**Docente:**               | Jaime Suasnábar Terrel                    |
+>**Alumna:**                | Liann Melanny Huaman Cunyas               |
+>**Semestre:**              | IX                                        |
+
+
 ## Tabla de Temas y Objetivos
 
 | **Semana** | **Tema**                                           | **Objetivo**                                                                                         |
