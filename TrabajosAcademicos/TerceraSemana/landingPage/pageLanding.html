@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="https://4.bp.blogspot.com/-6kVaNQj_1OQ/V3WEfTmo0JI/AAAAAAAAAzs/mlysQLhgyBEyWXuuVlFwFwn3_CCmsIXcgCLcB/s320/logo-fis-uncp-1%2B%255BJoel%2BTinx%255D.png">   
+</head>
+<body>
+
+  <header id="header">
+    <div class="logo">
+      <img src="./images/logo.svg" alt="">
+    </div>
+    <nav class="nav">
+      <a href="#idsection1">
+        Location
+      </a>
+      <a href="#idsection2">
+        Productive
+      </a>
+      <a href="#footer">
+        About Us
+      </a>
+    </nav>
+  </header>
+
+  <section class="section1" id="idsection1">
+    <div class="content">
+      <div class="text">
+          <h3>
+            All your files in one secure location, accessible anywhere.
+          </h3>
+          <p>
+            Fylo stores your most important files in one secure location. 
+            Access them wherever you need, share and collaborate with friends, 
+            family, and co-workers.
+          </p>
+      </div>
+      <div class="action">
+        <input type="email" name="" id="">
+        <button type="button">Get Started</button>
+      </div>
+    </div>
+    <div class="image">
+      <img src="./images/illustration-1.svg" alt="">
+    </div>
+  </section>
+
+  <section class="section2" id="idsection2">
+    <div class="content">
+      <h3>
+        Stay productive, wherever you are
+      </h3>
+      <p>
+        Never let location be an issue when accessing your files. Fylo has you 
+        covered for all of your file storage needs.
+      </p>
+      <p>
+        Securely share files and folders with friends, family and colleagues for 
+        live collaboration. No email attachments required!
+      </p>
+    </div>
+    <div class="image">
+      <img src="./images/illustration-2.svg" alt="">
+    </div>
+  </section>
+
+  <div class="early-access">
+    <div class="content">
+      <h3>
+        Get early access today
+      </h3>
+      <p>
+          It only takes a minute to sign up and our free starter tier is extremely generous. 
+          If you have any questions, our support team would be happy to help you.
+      </p>
+    </div>
+    <div class="action">
+      <input type="email" name="" id="">
+      <button type="button">Get Started For Free</button>
+    </div>
+  </div>
+
+  <footer class="footer" id="footer">
+    <div class="logo">
+        <img src="./images/logo.svg" alt="">
+    </div>
+    <div class="footer-links">
+      <div class="contact-info">
+        <div class="phone">
+          <img src="./images/icon-phone.svg" >
+          <p>
+            Phone: +1-543-123-4567
+          </p>
+        </div>
+        <div class="email">
+          <img src="./images/icon-email.svg" >
+          <p>
+            example@fylo.com
+          </p>
+        </div>
+      </div>
+      <div class="footer-menu">
+        <a href="#idsection1">
+          About Us
+        </a>
+        <a href="#idsection1">
+          Jobs
+        </a>
+        <a href="#idsection1">
+          Press
+        </a>
+        <a href="#idsection1">
+          Blog
+        </a>
+      </div>
+      <div class="footer-menu">
+        <a href="#idsection1">
+          Contact Us
+        </a>
+        <a href="#idsection1">
+          Terms
+        </a>
+        <a href="#idsection1">
+          Privacy
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+      window.addEventListener('scroll', function() {
+        var header = document.getElementById('header');
+        if (window.scrollY > 50) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+
+      // Función para mostrar u ocultar el menú al hacer clic en el icono de menú
+      document.getElementById("boton-hamburguesa").addEventListener("click", function() {
+        document.getElementById("menu-icon").classList.toggle("show");
+      });
+    });
+
+  </script>
+</body>
+</html>

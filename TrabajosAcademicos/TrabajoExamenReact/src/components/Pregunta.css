@@ -1,0 +1,7 @@
+.alternativa {
+    width: 50%;
+    margin: 5px 100px ;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-sizing: border-box;
+}

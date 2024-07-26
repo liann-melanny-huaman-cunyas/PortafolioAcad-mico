@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
     <!-- --------- CSS ---------- -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./public/style.css">
 
     <!-- --------- FAVICON ---------- -->
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./public/images/favicon.png" type="image/x-icon">
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <title>Portafolio | Liann</title>
 </head>
@@ -81,7 +82,7 @@
                 </div>
                 <div class="featured-image">
                     <div class="image">
-                        <img src="assets/images/avatar.jpg" alt="avatar">
+                        <img src="./public/images/avatar.jpg" alt="avatar">
                     </div>
                 </div>
             </section>
@@ -150,54 +151,124 @@
             </section>
             <!-- -------------- PROJECT BOX ---------------- -->
             <section class="section" id="proyectos">
-                <div class="top-header">
-                    <h1>Proyectos Academicos</h1>
+                <div class="table-container">
+                    <h1>Plan de Actividades Semanales</h1>
+                    <table id="tabla-contenidos">
+                        <thead>
+                            <tr>
+                                <th>Semana</th>
+                                <th>Tema</th>
+                                <th>¿Que hemos aprendido?</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- El contenido será insertado aquí por JavaScript -->
+                        </tbody>
+                    </table>
                 </div>
-                <div class="project-container">
-                    <div class="project-box" onclick="openLinkOne()" >
-                        <i class="uil uil-award"></i>
-                        <h3>Semana N°1</h3>
-                        <label>Plugin Emmet y atajos de teclado de VSC.</label>
+            </section>
+            <section class="section" id="project-repos">
+                <div class="top-header">
+                    <h1>Repoitorio de Proyectos Académicos</h1>
+                </div>
+                <div id="projects" class="project-container">
+                    <!-- Semana 1 -->
+                    <div class="project-box">
+                        <i class="uil uil-link"></i>
+                        <h3>Semana N°1 | Usar Visual Studio Code</h3>
+                        <label>Revisión de las conclusiones, logros y reflexiones de la semana.</label>
+                        <a href="https://github.com/tu-repositorio" target="_blank" class="repo-link">Dirígete al repositorio</a>
                     </div>
-                    <div class="project-box" onclick="openLinkTwo()" >
-                        <i class="uil uil-briefcase-alt"></i>
-                        <h3>Semana N°2</h3>
-                        <label>Uso de HTML y CSS para diseñar elementos utilizables en la web</label>
+                    <!-- Semana 2 -->
+                    <div class="project-box">
+                        <i class="uil uil-link"></i>
+                        <h3>Semana N°2 | HTML y CSS	</h3>
+                        <label>Revisión de las conclusiones, logros y reflexiones de la semana.</label>
+                        <a href="https://github.com/tu-repositorio" target="_blank" class="repo-link">Dirígete al repositorio</a>
                     </div>
-                    <div class="project-box" onclick="openLinkTwoOne()">
-                        <i class="uil uil-briefcase-alt"></i>
-                        <h3>Semana N°2 | SideBar </h3>
-                        <label> Sidebar con 2 modos de visualización: claro y oscur</label>
+                    <!-- Semana 3 -->
+                    <div class="project-box">
+                        <i class="uil uil-link"></i>
+                        <h3>Semana N°3 | Librerías CSS</h3>
+                        <label>Revisión de las conclusiones, logros y reflexiones de la semana.</label>
+                        <a href="https://github.com/tu-repositorio" target="_blank" class="repo-link">Dirígete al repositorio</a>
                     </div>
-                    <div class="project-box" onclick="openLinkTreeOne()">
-                        <i class="uil uil-award"></i>
-                        <h3>Semana N°3 | CSS</h3>
-                        <label>Usar y personalizar librerías de código CSS para el diseño responsive</label>
+                    <!-- Semana 4 -->
+                    <div class="project-box">
+                        <i class="uil uil-link"></i>
+                        <h3>Semana N°4 | JavaScript (Parte 1)</h3>
+                        <label>Revisión de las conclusiones, logros y reflexiones de la semana.</label>
+                        <a href="https://github.com/tu-repositorio" target="_blank" class="repo-link">Dirígete al repositorio</a>
                     </div>
-                    <div class="project-box" onclick="openLinkTreeTwo()" >
-                        <i class="uil uil-award"></i>
-                        <h3>Semana N°3 | BootStrap</h3>
-                        <label>Usar y personalizar librerías de código CSS para el diseño responsive</label>
+                    <!-- Semana 5 -->
+                    <div class="project-box">
+                        <i class="uil uil-link"></i>
+                        <h3>Semana N°5 | Trabajo: Pasarela de Pagos y Monetización</h3>
+                        <label>Revisión de las conclusiones, logros y reflexiones de la semana.</label>
+                        <a href="https://github.com/tu-repositorio" target="_blank" class="repo-link">Dirígete al repositorio</a>
                     </div>
-                    <div class="project-box" onclick="openLinkTreeTree()" >
-                        <i class="uil uil-award"></i>
-                        <h3>Semana N°3 | Tailwind</h3>
-                        <label>Usar y personalizar librerías de código CSS para el diseño responsive</label>
+                    <!-- Semana 6 -->
+                    <div class="project-box">
+                        <i class="uil uil-link"></i>
+                        <h3>Semana N°6 | JavaScript (Parte 2)</h3>
+                        <label>Revisión de las conclusiones, logros y reflexiones de la semana.</label>
+                        <a href="https://github.com/tu-repositorio" target="_blank" class="repo-link">Dirígete al repositorio</a>
                     </div>
-                    <div class="project-box" onclick="openLinkTreeFour()">
-                        <i class="uil uil-award"></i>
-                        <h3>Semana N°3 | Page </h3>
-                        <label>Pagina web responsive en HTML CSS</label>
+                    <!-- Semana 7 -->
+                    <div class="project-box">
+                        <i class="uil uil-link"></i>
+                        <h3>Semana N°7 | Consumo de APIs con JavaScript puro</h3>
+                        <label>Revisión de las conclusiones, logros y reflexiones de la semana.</label>
+                        <a href="https://github.com/tu-repositorio" target="_blank" class="repo-link">Dirígete al repositorio</a>
                     </div>
-                    <div class="project-box" onclick="openLinkTreeFive()" >
-                        <i class="uil uil-award"></i>
-                        <h3>Semana N°3 | Page BootStrap</h3>
-                        <label>Pagina web responsive en HTML BootStrap</label>
+                    <!-- Semana 8 -->
+                    <div class="project-box">
+                        <i class="uil uil-link"></i>
+                        <h3>Semana N°8 | Trabajo Parcial: Ruleta en Web y Aplicación en React</h3>
+                        <label>Revisión de las conclusiones, logros y reflexiones de la semana.</label>
+                        <a href="https://github.com/tu-repositorio" target="_blank" class="repo-link">Dirígete al repositorio</a>
                     </div>
-                    <div class="project-box" onclick="openLinkFour()" >
-                        <i class="uil uil-award"></i>
-                        <h3>Semana N°4 - 5 | JS</h3>
-                        <label>Desarrollar aplicaciones dinámicas con Javascrip.</label>
+                    <!-- Semana 9 -->
+                    <div class="project-box">
+                        <i class="uil uil-link"></i>
+                        <h3>Semana N°9 | React con Hooks</h3>
+                        <label>Revisión de las conclusiones, logros y reflexiones de la semana.</label>
+                        <a href="https://github.com/tu-repositorio" target="_blank" class="repo-link">Dirígete al repositorio</a>
+                    </div>
+                    <!-- Semana 10 -->
+                    <div class="project-box">
+                        <i class="uil uil-link"></i>
+                        <h3>Semana N°10 | Trabajo de React</h3>
+                        <label>Revisión de las conclusiones, logros y reflexiones de la semana.</label>
+                        <a href="https://github.com/tu-repositorio" target="_blank" class="repo-link">Dirígete al repositorio</a>
+                    </div>
+                    <!-- Semana 11 -->
+                    <div class="project-box">
+                        <i class="uil uil-link"></i>
+                        <h3>Semana N°11 | Next.js</h3>
+                        <label>Revisión de las conclusiones, logros y reflexiones de la semana.</label>
+                        <a href="https://github.com/tu-repositorio" target="_blank" class="repo-link">Dirígete al repositorio</a>
+                    </div>
+                    <!-- Semana 12 -->
+                    <div class="project-box">
+                        <i class="uil uil-link"></i>
+                        <h3>Semana N°12 | JSP</h3>
+                        <label>Revisión de las conclusiones, logros y reflexiones de la semana.</label>
+                        <a href="https://github.com/tu-repositorio" target="_blank" class="repo-link">Dirígete al repositorio</a>
+                    </div>
+                    <!-- Semana 13 -->
+                    <div class="project-box">
+                        <i class="uil uil-link"></i>
+                        <h3>Semana N°13 | Spring 3 con Java 22</h3>
+                        <label>Revisión de las conclusiones, logros y reflexiones de la semana.</label>
+                        <a href="https://github.com/tu-repositorio" target="_blank" class="repo-link">Dirígete al repositorio</a>
+                    </div>
+                    <!-- Semana 14 -->
+                    <div class="project-box">
+                        <i class="uil uil-link"></i>
+                        <h3>Semana N°14 | Trabajo Parcial: API REST	</h3>
+                        <label>Revisión de las conclusiones, logros y reflexiones de la semana.</label>
+                        <a href="https://github.com/tu-repositorio" target="_blank" class="repo-link">Dirígete al repositorio</a>
                     </div>
                 </div>
             </section>
@@ -217,7 +288,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="form-control">
+                        <form action="https://formsubmit.co/melanycunyas@gmail.com" method="POST" class="form-control">
                             <div class="form-inputs">
                                 <input type="text" class="input-field" placeholder="Nombre">
                                 <input type="text" class="input-field" placeholder="Email">
@@ -228,7 +299,9 @@
                             <div class="form-button">
                                 <button class="btn">Enviar <i class="uil uil-message"></i></button>
                             </div>
-                        </div>
+                            <input type="hidden" name="_next" value="https://liann-melanny-huaman-cunyas.github.io/portafolioAcademico/">
+                            <input type="hidden" name="_captcha" value="false">
+                        </form>
                     </div>
                 </div>
             </section>
@@ -270,6 +343,6 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
 	<!-- ----- MAIN JS ----- -->
-    <script src="./assets/js/main.js"></script>
+    <script src="./public/main.js"></script>
 </body>
 </html>

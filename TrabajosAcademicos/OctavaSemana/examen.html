@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>EXAMEN FIS - DESARROLLO WEB</title>
+</head>
+<body>
+    <div class="encabezado">
+        <h1 id="titulo">EXAMEN FIS - DESARROLLO WEB</h1>
+        <p id="ganador">Girar la ruleta</p>
+    </div>
+
+    <div class="rueda">
+        <canvas id="canvas" width="500" height="500"></canvas>
+        <div class="circulo-centro" onclick="girar()">
+            <p class="boton-girar">Dar click para girar</p>
+            <div class="triangulo"></div>
+        </div>
+    </div>
+
+    <div class="areaEntrada">
+        <textarea id="textarea" rows="20" cols="30" onchange="crearRueda()">
+1
+2
+3
+4
+5
+6
+7
+8
+9
+        </textarea>
+    </div>
+
+    <div class="botones-elemento">
+        <button onclick="cambiarTitulo()">Cambiar Titulo</button>
+        <button onclick="editarElementos()">Editar Elementos</button>
+        <button onclick="esconderElementos()">Esconder Elementos</button>
+    </div>
+
+    <div class="botones-ruleta">
+        <button onclick="girar()">Girar la ruleta</button>
+        <button onclick="reiniciar()">Reiniciar</button>
+        <button onclick="editarElementos()">Editar</button>
+        <button onclick="pantallaCompleta()">Pantalla completa</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+.contador-esquina {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 10px;
+    border: 10px solid #cccccc;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hora-inicio {
+    color: blue;
+}
+
+.hora-fin {
+    color: red;
+}
+
+.tiempo-restante {
+    color: #800080;
+    font-size: 24px;
+    text-align: center;
+}
+
+.morado-grande {
+    font-size: 29px;
+}
